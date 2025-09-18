@@ -45,7 +45,7 @@ html {
   font-weight: 600;
   color: #333; /* tom neutro e elegante */
   background-color: transparent;
-  border-radius: 50%;
+  border-radius: 20%;
   padding: 0.5rem;
   text-transform: uppercase;
   font-family: 'Helvetica Neue', sans-serif;
@@ -53,7 +53,6 @@ html {
 .logo img {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
 }
 
 .nav-links {
