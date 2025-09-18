@@ -90,7 +90,7 @@ html {
 
 /* Seções */
 section {
-  padding: 100px 0;
+  padding: 50px 0;
   max-width: 1200px;
   margin: 0 auto;
   padding-left: 20px;
@@ -100,7 +100,6 @@ section {
 /* Seção de Introdução */
 .intro {
   text-align: center;
-  padding: 150px 20px 100px;
   background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
 }
 
