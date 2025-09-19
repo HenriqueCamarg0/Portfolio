@@ -90,16 +90,15 @@ html {
 .project-link {
   display: inline-block;
   margin-top: 15px; /* Adiciona espaço acima do botão */
-  padding: 10px 20px;
-  background-color: #ff0000; /* Cor de fundo vermelha */
   color: #fff; /* Cor do texto branca */
   text-decoration: none; /* Remove o sublinhado */
-  border-radius: 25px; /* Deixa as bordas arredondadas */
+  border-radius: 10px; /* Deixa as bordas arredondadas */
   font-weight: bold;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .project-link:hover {
+  padding: 5px 5px;  
   background-color: #e60000; /* Escurece a cor no hover */
   transform: translateY(-2px); /* Efeito de leve elevação */
 }
