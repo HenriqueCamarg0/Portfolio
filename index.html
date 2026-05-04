@@ -4,232 +4,220 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Henrique | Desenvolvedor Fullstack</title>
+  <meta name="description" content="Henrique Camargo — Desenvolvedor Fullstack especializado em React, Node.js, React Native, Python e Power BI." />
+  <title>Henrique Camargo | Desenvolvedor Fullstack</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
   <link rel="stylesheet" href="styles/main.css" />
-  <link rel="icon" href="https://ik.imagekit.io/al1usqugs/Portefolio/assets/favicon.png?updatedAt=1758233942240"
-    type="image/x-icon" />
+  <link rel="icon" href="https://ik.imagekit.io/al1usqugs/Portefolio/assets/favicon.png?updatedAt=1758233942240" type="image/x-icon" />
 </head>
 
 <body>
-  <!-- Navegação -->
-  <nav class="navbar">
+
+  <!-- ── Navbar ── -->
+  <nav class="navbar" id="navbar">
     <div class="nav-container">
       <div class="logo">
-        <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/favicon.png?updatedAt=1758233942240"
-          alt="Logo Henrique Camargo" srcset="">
+        <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/favicon.png?updatedAt=1758233942240" alt="Logo Henrique Camargo" />
       </div>
-      <ul class="nav-links">
+      <ul class="nav-links" id="nav-links">
         <li><a href="#home">Início</a></li>
+        <li><a href="#skills">Habilidades</a></li>
         <li><a href="#services">Serviços</a></li>
         <li><a href="#projects">Projetos</a></li>
         <li><a href="#contact">Contato</a></li>
       </ul>
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
   </nav>
 
   <main>
-    <!-- Seção de Introdução -->
+
+    <!-- ── Hero ── -->
     <section class="intro" id="home">
       <div class="intro-content">
         <div class="profile-pic">
-          <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/user.JPG?updatedAt=1758235016511"
-            alt="Henrique - Desenvolvedor Fullstack" />
+          <img
+            src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/user.JPG?updatedAt=1758235016511"
+            alt="Henrique Camargo - Desenvolvedor Fullstack"
+          />
         </div>
         <div class="intro-text">
-          <h1>Hello World! Eu sou o Henrique Camargo</h1>
+          <p class="intro-greeting">👋 Olá, eu sou</p>
+          <h1>Henrique Camargo</h1>
           <h2><span class="dev">Desenvolvedor</span> <span class="stack">Fullstack</span></h2>
-          <p>
+          <p class="intro-desc">
             Transformo ideias em aplicações reais, evolutivas e funcionais. Desenvolvo sistemas com paixão
-            pela tecnologia, contribuindo com soluções inovadoras e eficazes para desafios complexos.
+            pela tecnologia, contribuindo com soluções inovadoras para desafios complexos.
           </p>
+          <div class="intro-actions">
+            <a href="#contact" class="botao preto">Entrar em contato</a>
+            <a href="assets/cv-henrique.pdf" download class="botao branco">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
         </div>
       </div>
 
-      <!-- Seção de Tecnologias -->
-      <section class="tech-section">
+      <a href="#skills" class="scroll-indicator" aria-label="Rolar para baixo">
+        <span>Scroll</span>
+        <i class="fas fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- ── Habilidades ── -->
+    <section class="skills-section" id="skills">
+      <p class="section-label">O que eu sei fazer</p>
+      <h2 class="section-title">Habilidades &amp; Tecnologias</h2>
+
+      <div class="skills-tabs" role="tablist">
+        <button class="tab-btn active" data-tab="tab-dev" role="tab" aria-selected="true">Desenvolvimento</button>
+        <button class="tab-btn" data-tab="tab-data" role="tab" aria-selected="false">Data &amp; Analytics</button>
+      </div>
+
+      <div class="tab-content active" id="tab-dev" role="tabpanel">
         <div class="tech-icons">
           <div class="tech-icon"><i class="fab fa-react"></i><span>React</span></div>
-          <div class="tech-icon"><i class="fab fa-react"></i><span>React Native</span></div>
-          <div class="tech-icon"><i class="fab fa-html5"></i><span>HTML5</span></div>
-          <div class="tech-icon"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
-          <div class="tech-icon"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
-          <div class="tech-icon"><i class="fab fa-github"></i><span>GitHub</span></div>
+          <div class="tech-icon"><i class="fas fa-mobile-alt"></i><span>React Native</span></div>
           <div class="tech-icon"><i class="fab fa-node-js"></i><span>Node.js</span></div>
+          <div class="tech-icon"><i class="fab fa-js-square"></i><span>JavaScript</span></div>
+          <div class="tech-icon"><i class="fas fa-code"></i><span>TypeScript</span></div>
+          <div class="tech-icon"><i class="fab fa-html5"></i><span>HTML5</span></div>
+          <div class="tech-icon"><i class="fab fa-css3-alt"></i><span>CSS3</span></div>
           <div class="tech-icon"><i class="fas fa-leaf"></i><span>Spring Boot</span></div>
+          <div class="tech-icon"><i class="fab fa-github"></i><span>GitHub</span></div>
         </div>
-      </section>
+      </div>
 
-    </section>
-
-    <!-- Seção de Tecnologias -->
-
-    <!-- Botões de Ação -->
-    <section class="cta-buttons">
-      <a href="#contact" class="botao branco">Entrar em contato</a>
-      <a href="assets/cv-henrique.pdf" download class="botao preto">Download CV</a>
-    </section>
-
-    <!-- Seção de Serviços -->
-    <section class="services-section" id="services">
-      <h2>Meus serviços</h2>
-      <h3 class="services-subtitle">Como posso ajudar o seu negócio</h3>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-laptop-code"></i>
-          </div>
-          <h3>Websites e Aplicativos</h3>
-          <p>Desenvolvimento de interfaces modernas e responsivas, focadas na melhor experiência do usuário.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-database"></i>
-          </div>
-          <h3>API e Banco de dados</h3>
-          <p>Criação de serviços robustos e escaláveis para gerenciar e processar dados de forma eficiente.
-          </p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fas fa-infinity"></i>
-          </div>
-          <h3>DevOps</h3>
-          <p>Gestão e infraestrutura de aplicações, garantindo alta disponibilidade e performance.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">
-            <i class="fab fa-react"></i>
-          </div>
-          <h3>Desenvolvimento Mobile</h3>
-          <p>Criação de aplicativos nativos para iOS e Android com React Native, garantindo uma experiência de usuário
-            fluida e de alta performance.</p>
+      <div class="tab-content" id="tab-data" role="tabpanel">
+        <div class="tech-icons">
+          <div class="tech-icon"><i class="fab fa-python"></i><span>Python</span></div>
+          <div class="tech-icon"><i class="fas fa-chart-bar"></i><span>Power BI</span></div>
+          <div class="tech-icon"><i class="fas fa-database"></i><span>SQL</span></div>
+          <div class="tech-icon"><i class="fas fa-file-excel"></i><span>Excel Avançado</span></div>
+          <div class="tech-icon"><i class="fas fa-chart-line"></i><span>Análise de Dados</span></div>
+          <div class="tech-icon"><i class="fas fa-project-diagram"></i><span>ETL</span></div>
         </div>
       </div>
     </section>
 
-    <!-- Seção de Projetos -->
+    <!-- ── Serviços ── -->
+    <section class="services-section" id="services">
+      <p class="section-label">Como posso ajudar</p>
+      <h2 class="section-title">Meus Serviços</h2>
+      <div class="services-grid">
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-laptop-code"></i></div>
+          <h3>Websites e Aplicativos</h3>
+          <p>Interfaces modernas e responsivas com foco na melhor experiência do usuário.</p>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-database"></i></div>
+          <h3>API e Banco de Dados</h3>
+          <p>Serviços robustos e escaláveis para gerenciar e processar dados com eficiência.</p>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-chart-bar"></i></div>
+          <h3>Dashboards &amp; BI</h3>
+          <p>Dashboards interativos em Power BI e relatórios analíticos com Python para apoiar decisões de negócio.</p>
+        </div>
+        <div class="service-card animate-on-scroll">
+          <div class="service-icon"><i class="fas fa-mobile-alt"></i></div>
+          <h3>Desenvolvimento Mobile</h3>
+          <p>Aplicativos para iOS e Android com React Native, com experiência fluida e alta performance.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Projetos ── -->
     <section class="projects-section" id="projects">
-      <h2>Meu trabalho</h2>
-      <h3 class="projects-title">Veja os projetos em destaque</h3>
+      <p class="section-label">Meu trabalho</p>
+      <h2 class="section-title">Projetos em Destaque</h2>
+
+      <div class="project-filters" role="group" aria-label="Filtrar projetos">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="mobile">Mobile</button>
+      </div>
+
       <div class="projects-grid">
 
-        <!-- primeiro projeto Desenvolvimento WEB-->
-        <div class="project-card">
+        <div class="project-card animate-on-scroll" data-category="web">
           <div class="project-image">
-            <img src="assets/Projeto1.png" alt="Hunneto | Moveis planejados" srcset="">
+            <img src="assets/Projeto1.png" alt="Hunneto | Móveis Planejados" />
           </div>
           <div class="project-content">
-            <h3>Hunneto | Moveis planejados</h3>
-            <p>Vitrine digital de uma marcenaria especializada em móveis planejados sob medida, com foco em design,
-              funcionalidade e excelência no acabamento.</p>
-            <p>Conheça o projeto em <a href="https://moveis-planejados-app.vercel.app/" class="project-link">Clique
-                aqui</a></p>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
+            <h3>Hunneto | Móveis Planejados</h3>
+            <p>Vitrine digital de uma marcenaria especializada em móveis planejados sob medida, com foco em design e excelência no acabamento.</p>
+            <div class="project-footer">
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+              </div>
+              <a href="https://moveis-planejados-app.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                Ver projeto <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- segundo projeto Desenvolvimento WEB-->
-        <div class="project-card">
+        <div class="project-card animate-on-scroll" data-category="web">
           <div class="project-image">
-            <img src="assets/Projeto2.png" alt="Gaale's | Planejados" srcset="">
+            <img src="assets/Projeto2.png" alt="Gaale's | Planejados" />
           </div>
           <div class="project-content">
             <h3>Gaale's | Planejados</h3>
-            <p>Cada lar é único e seus móveis também devem ser. Por isso, oferecemos dois tipos de personalização para
-              atender as necessidades do seu projeto com as soluções mais apropriadas.</p>
-            <p>Conheça o projeto em <a href="https://gaales-planejados.vercel.app/" class="project-link">Clique aqui</a>
-            </p>
-            <div class="project-tech">
-              <span class="tech-tag">React</span>
+            <p>Cada lar é único e seus móveis também devem ser. Personalização completa para atender as necessidades do seu projeto.</p>
+            <div class="project-footer">
+              <div class="project-tech">
+                <span class="tech-tag">React</span>
+              </div>
+              <a href="https://gaales-planejados.vercel.app/" class="project-link" target="_blank" rel="noopener noreferrer">
+                Ver projeto <i class="fas fa-arrow-right"></i>
+              </a>
             </div>
           </div>
         </div>
 
-        <!-- 3° projeto Desenvolvimento WEB -->
-        <div class="project-card">
-          <div class="project-image">
-            <i class="fas fa-infinity"></i>
-          </div>
-          <div class="project-content">
-            <h3>Projeto em Desenvolvimento</h3>
-            <p>Página em construção...</p>
-            <div class="project-tech">
-              <span class="tech-tag">HTML</span>
-              <span class="tech-tag">CSS</span>
+        <div class="project-card animate-on-scroll" data-category="mobile">
+          <div class="project-content project-content--mobile">
+            <div class="project-mobile-header">
+              <h3>APP FumacaDiesel</h3>
+              <p>Gerenciamento de serviços de manutenção de caminhões. Controle centralizado de histórico para oficinas e transportadoras.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo</span>
+              </div>
             </div>
-          </div>
-        </div>
-
-        <!-- 1° Desenvolvimento Mobile -->
-        <div class="project-card">
-          <div class="project-content">
-            <h3>APP FumacaDiesel</h3>
-            <p>O <strong>FumacaDiesel APP</strong> é um aplicativo móvel focado no gerenciamento de serviços de
-              manutenção de
-              caminhões. Ideal para oficinas e empresas de transporte que desejam manter o controle e o histórico de
-              suas manutenções de maneira centralizada e intuitiva.</p>
             <div class="mobile-gallery">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/App_FumacaDiesel/IMG_1.jpg?updatedAt=1758246763365"
-                alt="APP FumacaDiesel" srcset="">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/App_FumacaDiesel/IMG_2.jpg?updatedAt=1758246763709"
-                alt="APP FumacaDiesel" srcset="">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/App_FumacaDiesel/IMG_3.jpg?updatedAt=1758246763942"
-                alt="APP FumacaDiesel" srcset="">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/App_FumacaDiesel/IMG_4.jpg?updatedAt=1758246763757"
-                alt="APP FumacaDiesel" srcset="">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/App_FumacaDiesel/IMG_5.jpg?updatedAt=1758246763516"
-                alt="APP FumacaDiesel" srcset="">
-            </div>
-            <div class="project-tech">
-              <span class="tech-tag">React Native</span>
-              <span class="tech-tag">Expo</span>
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/App_FumacaDiesel/IMG_1.jpg?updatedAt=1758246763365" alt="FumacaDiesel tela 1" />
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/App_FumacaDiesel/IMG_2.jpg?updatedAt=1758246763709" alt="FumacaDiesel tela 2" />
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/App_FumacaDiesel/IMG_3.jpg?updatedAt=1758246763942" alt="FumacaDiesel tela 3" />
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/App_FumacaDiesel/IMG_4.jpg?updatedAt=1758246763757" alt="FumacaDiesel tela 4" />
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/App_FumacaDiesel/IMG_5.jpg?updatedAt=1758246763516" alt="FumacaDiesel tela 5" />
             </div>
           </div>
         </div>
 
-        <!-- 2° Desenvolvimento Mobile -->
-        <div class="project-card">
-          <div class="project-content">
-            <h3>APP Controle de pagamentos</h3>
-            <p>Aplicativo para controle de clientes e pagamentos, desenvolvido em React Native com TypeScript. Permite
-              gerenciar clientes, registrar pagamentos e visualizar um dashboard financeiro de forma simples e
-              intuitiva.
-            </p>
-            <div class="mobile-gallery">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_01.jpg?updatedAt=1758248849817"
-                alt="APP Controle de pagamentos" srcset="">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_02.jpg?updatedAt=1758248849089"
-                alt="APP Controle de pagamentos" srcset="">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_03.jpg?updatedAt=1758248848577"
-                alt="APP Controle de pagamentos" srcset="">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_04.jpg?updatedAt=1758248848605"
-                alt="APP Controle de pagamentos" srcset="">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_05.jpg?updatedAt=1758248848134"
-                alt="APP Controle de pagamentos" srcset="">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_06.jpg?updatedAt=1758248849381"
-                alt="APP Controle de pagamentos" srcset="">
-              <img
-                src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_07.jpg?updatedAt=1758248848186"
-                alt="APP Controle de pagamentos" srcset="">
+        <div class="project-card animate-on-scroll" data-category="mobile">
+          <div class="project-content project-content--mobile">
+            <div class="project-mobile-header">
+              <h3>APP Controle de Pagamentos</h3>
+              <p>Controle de clientes e pagamentos em React Native com TypeScript. Dashboard financeiro, registro de pagamentos e gestão de clientes.</p>
+              <div class="project-tech">
+                <span class="tech-tag">React Native</span>
+                <span class="tech-tag">Expo</span>
+                <span class="tech-tag">TypeScript</span>
+              </div>
             </div>
-            <div class="project-tech">
-              <span class="tech-tag">React Native</span>
-              <span class="tech-tag">Expo</span>
+            <div class="mobile-gallery">
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_01.jpg?updatedAt=1758248849817" alt="Controle Pagamentos tela 1" />
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_02.jpg?updatedAt=1758248849089" alt="Controle Pagamentos tela 2" />
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_03.jpg?updatedAt=1758248848577" alt="Controle Pagamentos tela 3" />
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_04.jpg?updatedAt=1758248848605" alt="Controle Pagamentos tela 4" />
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_05.jpg?updatedAt=1758248848134" alt="Controle Pagamentos tela 5" />
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_06.jpg?updatedAt=1758248849381" alt="Controle Pagamentos tela 6" />
+              <img src="https://ik.imagekit.io/al1usqugs/Portefolio/assets/APP_ControlePagamento/IMG_07.jpg?updatedAt=1758248848186" alt="Controle Pagamentos tela 7" />
             </div>
           </div>
         </div>
@@ -237,49 +225,42 @@
       </div>
     </section>
 
-    <!-- Seção de Contato -->
+    <!-- ── Contato ── -->
     <section class="contact-section" id="contact">
-      <h2>Contato</h2>
-      <p style="margin-bottom: 40px; color: #ccc;">Entre em contato ou acompanhe as minhas redes sociais!</p>
+      <p class="section-label">Vamos conversar</p>
+      <h2 class="section-title">Entre em Contato</h2>
+      <p class="contact-desc">Aberto a oportunidades, freelas e parcerias. Me chama!</p>
       <div class="contact-grid">
-        <a href="https://www.linkedin.com/in/henrique-camargo-b915621a3/" class="contact-card" target="_blank">
-          <div class="contact-icon">
-            <i class="fab fa-linkedin"></i>
-          </div>
+        <a href="https://www.linkedin.com/in/henrique-camargo-b915621a3/" class="contact-card animate-on-scroll" target="_blank" rel="noopener noreferrer">
+          <div class="contact-icon"><i class="fab fa-linkedin"></i></div>
           <span>LinkedIn</span>
         </a>
-
-        <a href="https://github.com/HenriqueCamarg0" class="contact-card" target="_blank">
-          <div class="contact-icon">
-            <i class="fab fa-github"></i>
-          </div>
+        <a href="https://github.com/HenriqueCamarg0" class="contact-card animate-on-scroll" target="_blank" rel="noopener noreferrer">
+          <div class="contact-icon"><i class="fab fa-github"></i></div>
           <span>GitHub</span>
         </a>
-
-        <a href="https://instagram.com" class="contact-card" target="_blank">
-          <div class="contact-icon">
-            <i class="fab fa-instagram"></i>
-          </div>
+        <a href="https://instagram.com/seu_usuario" class="contact-card animate-on-scroll" target="_blank" rel="noopener noreferrer">
+          <div class="contact-icon"><i class="fab fa-instagram"></i></div>
           <span>Instagram</span>
         </a>
-
-        <a href="https://wa.me/5511940436928" class="contact-card">
-          <div class="contact-icon">
-            <i class="fab fa-whatsapp"></i>
-          </div>
+        <a href="https://wa.me/5511940436928" class="contact-card animate-on-scroll" target="_blank" rel="noopener noreferrer">
+          <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
           <span>WhatsApp</span>
         </a>
       </div>
     </section>
+
   </main>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Henrique Camargo. Todos os direitos reservados.</p>
   </footer>
 
-  <!-- JavaScript -->
-  <script src="scripts/main.js"></script>
+  <button class="scroll-top" id="scrollTop" aria-label="Voltar ao topo">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
